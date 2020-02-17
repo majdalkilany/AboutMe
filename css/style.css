@@ -1,0 +1,50 @@
+body {
+    
+    background: #2be2d9d1;
+    margin: 3px;
+    padding: 3px;
+
+}
+header{
+    
+    padding: 9px;
+    background: cornflowerblue;
+    margin: -5px;
+    border: 1px solid;
+    /* text-align: center; */
+
+}
+h1{
+
+    text-align: center;
+
+}
+nav{
+    display: inline-block;
+    
+    padding: inherit;
+
+
+}
+ul{
+    display: inline-flex;
+    padding: 9px;
+    text-align: center;
+    border: 1 px black;
+    /* border:  1px solid; */
+
+} 
+li{
+    padding: inherit;
+}
+main{
+    
+    height: 500px;
+    padding: 12px 0px;
+    margin: 2px;
+
+}
+footer{
+    background: cornflowerblue;
+
+}
