@@ -117,50 +117,57 @@
     }
 
 
-    // var country =['palestine', 'canada','germane' ,'Australia' ];
-   
-//    var  convertCountry = country.toString();
-    var country =['palestine','jordan ','qatar','canada','france','germane' ,'Algeria','Australia' ,'Brazil'];
+    var country =['palestine','jordan','qatar','canada','france','germane' ];
+
+    var chooseCountry = prompt('choose my favourite contry ').toLowerCase();
 
 
-    // = prompt('palestine jaban  qatar  canada  france  germane  Algeria  Australia  Brazil');
-
-//     var chooseCountry = prompt('choose my favourite contry palestine jordan  qatar  canada  france  germane  Algeria  Australia  Brazil').toLowerCase();
-
-// for( var j=0 ; j <5 ;j++) {
-//         if( convertCountry === chooseCountry){
-//             score = score +1;
-//             console.log(score)
-//             j=6; 
-//         }else {
-//             var chooseCountry = prompt('choose my favourite contry palestine jordan  qatar  canada  france  germane  Algeria  Australia  Brazil').toLowerCase();
-//         }
-//     }
-
-    for( var j=0 ; j <5 ;j++) {
-        if( country[0] === chooseCountry){
-            score = score +1;
-            console.log(score)
-            j=6;
+    // for( var j=0 ; j <5 ;j++) {
+    //     if( country[0] === chooseCountry){
+    //         score = score +1;
+    //         console.log(score)
+    //         j=6;
         
-        }else if( country[3] === chooseCountry){
-            score = score +1;
-            j=6; 
-        } else if( country[5] === chooseCountry){
-            score = score +1;
-            console.log(score);
+    //     }else if( country[3] === chooseCountry){
+    //         score = score +1;
+    //         j=6; 
+    //     } else if( country[5] === chooseCountry){
+    //         score = score +1;
+    //         console.log(score);
 
-            j=6; 
+    //         j=6; 
 
 
-        }
-        else if( country[7] === chooseCountry){
-            score = score +1;
-            console.log(score);
+    //     }
+    //     else if( country[7] === chooseCountry){
+    //         score = score +1;
+    //         console.log(score);
 
-            j=6; 
-        }else {
-            var chooseCountry = prompt('choose my favourite contry palestine jordan  qatar  canada  france  germane  Algeria  Australia  Brazil').toLowerCase();
+    //         j=6; 
+    //     }else {
+    //         var chooseCountry = prompt('choose my favourite contry palestine jordan  qatar  canada  france  germane  Algeria  Australia  Brazil').toLowerCase();
+    //     }
+    // }
+            var j =0 
+    while( j <= country.length){
+        switch (chooseCountry) {
+                case country[0]:
+                case country[1]:
+                case country[2]:
+                case country[3]:
+                case country[4]:
+                case country[5]:
+                   score = score +1;
+                j = 10
+                break;
+        
+            default:
+                chooseCountry = prompt('choose my favourite contry ').toLowerCase();
+                j ++
+                break;
         }
     }
+       
+
+    
     alert('you are scored  ' + score)
