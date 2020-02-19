@@ -149,15 +149,18 @@
         //     }
         // }
                 var j =0 
+                
         while( j <= country.length){
             switch (chooseCountry) {
                     case country[0]:
-                    case country[1]:
-                    case country[2]:
-                    case country[3]:
-                    case country[4]:
-                    case country[5]:
+                     case country[1]:
+                     case country[2]:
+                     case country[3]:
+                     case country[4]:
+                     case country[5]:
+
                     score = score +1;
+
                     j = 10
                     break;
             
@@ -166,5 +169,7 @@
                     j ++
                     break;
             }
-        }
+                    
+            }
+                
         alert('you are scored  ' + score)
