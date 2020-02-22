@@ -3,7 +3,7 @@
             var Name = prompt("Enter your Name?");
             // console.log(" your Name is " + Name);
             alert("please" + Name + "make your all answer Yes or No");
-            var KnewMe = prompt("Hello " + Name + " Do You Knew Me ?").toLowerCase();
+            var KnewMe = prompt("Hello  " + Name + "  Do You Knew Me ?").toLowerCase();
             // console.log("Its convaret to Upper  Case + " + KnewMe);
 
             var score = 0;
@@ -12,16 +12,16 @@
             switch (KnewMe) {
                 case "yes":
                 case "y":
-                    alert("lets Knew How Much Do You Knew About Me");
+                    alert("lets Knew How Much Do You Knew About Me ");
                     score = score + 1;
                     console.log(score)
                     break;
                 case "no":
                 case "n":
-                    alert("try To answer some qoustion ?");
+                    alert("try To answer some qoustion ? ");
                     break;
             }
-            var age = prompt("Are you older than me ");;
+            var age = prompt("Are you older than me  ");;
             var Newage = age.toLowerCase();
 
             // console.log("Its convaret to lower Case + " + Newage);
